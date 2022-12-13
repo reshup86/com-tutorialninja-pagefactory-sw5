@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>TestNG:  Sanity Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sanity Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 13 17:34:39 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>25 seconds (25939 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>sanity </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.MyAccountsPageTest.verifyUserShouldNavigateToRegisterPageSuccessfully()'><b>verifyUserShouldNavigateToRegisterPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.MyAccountsPageTest<br/>
+<a href="#Output-2143700452" onClick='toggleBox("Output-2143700452", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2143700452" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2143700452">
+Clicking on my account: [[ChromeDriver: chrome on WINDOWS (35f6aaa339eb364f9bc6c102bbb8b6ff)] -> xpath: //span[text()='My Account']]<br/>
+Verify Register Account Text [[ChromeDriver: chrome on WINDOWS (35f6aaa339eb364f9bc6c102bbb8b6ff)] -> xpath: //h1[text()='Register Account']]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.testsuite.MyAccountsPageTest@6dde5c8c</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest.verifyProductsPriceDisplayHighToLowSuccessfully()'><b>verifyProductsPriceDisplayHighToLowSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest<br/>
+<a href="#Output-1476061571" onClick='toggleBox("Output-1476061571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1476061571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1476061571">
+Mouse Hovering to LaptopsNotebooks and Clicking on it: [[ChromeDriver: chrome on WINDOWS (f57e513ee14ca49ca03c6c90a079ebcf)] -> link text: Laptops & Notebooks]<br/>
+Arranging product in high to low order: <br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.DesktopPageTest.verifyProductArrangeInAlphabeticalOrder()'><b>verifyProductArrangeInAlphabeticalOrder</b><br>Test class: com.tutorialsninja.testsuite.DesktopPageTest<br/>
+<a href="#Output-1907467420" onClick='toggleBox("Output-1907467420", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1907467420" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1907467420">
+Mouse Hovering to Desktop and Clicking on it: [[ChromeDriver: chrome on WINDOWS (62a3b14c42c8f00fdd5ab7d1a377af6a)] -> link text: Desktops]<br/>
+Arrange products in descending order<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.testsuite.DesktopPageTest@4524411f</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.HomePageTest.verifyUserShouldNavigateToDesktopsPageSuccessfully()'><b>verifyUserShouldNavigateToDesktopsPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.HomePageTest<br/>
+<a href="#Output-2128195220" onClick='toggleBox("Output-2128195220", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2128195220" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2128195220">
+Mouse Hovering to Desktop and Clicking on it: [[ChromeDriver: chrome on WINDOWS (d45f61504924ab2b71eab585c308d60b)] -> link text: Desktops]<br/>
+Navigate to desktop error message<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.testsuite.HomePageTest@fe18270</td></tr>
+</table><p>
+</body>
+</html>

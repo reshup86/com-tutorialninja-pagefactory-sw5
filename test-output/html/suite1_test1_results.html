@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Smoke Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Smoke Test</h1>
+<p>
+  Test duration: 16.755s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatUserPlaceOrderSuccessfully
+      </td>
+  <td class="duration">
+    4.190s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on currency dropdown
+                                Mouse Hovering to LaptopsNotebooks and Clicking on it: [[ChromeDriver: chrome on WINDOWS (27d4075e6d188ba0a5cce3d050061fc3)] -> link text: Laptops & Notebooks]
+                                Clicking pn MacBook Menu
+                                Verify Macbook error Message [[ChromeDriver: chrome on WINDOWS (27d4075e6d188ba0a5cce3d050061fc3)] -> xpath: //h1[contains(text(),'MacBook')]]
+                                mac book add to cart[[ChromeDriver: chrome on WINDOWS (27d4075e6d188ba0a5cce3d050061fc3)] -> xpath: //button[@id='button-cart']]
+                                Click on shopping cart button[[ChromeDriver: chrome on WINDOWS (27d4075e6d188ba0a5cce3d050061fc3)] -> xpath: //a[contains(text(),'shopping cart')]]
+                                Enter shoppingcart text error message [[ChromeDriver: chrome on WINDOWS (27d4075e6d188ba0a5cce3d050061fc3)] -> xpath: //div[@id='content']/h1[contains(text(), 'Shopping Cart')]]
+                                Verify Macbook name error message[[ChromeDriver: chrome on WINDOWS (27d4075e6d188ba0a5cce3d050061fc3)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[2]/a]
+                                Verify macbook total error message[[ChromeDriver: chrome on WINDOWS (27d4075e6d188ba0a5cce3d050061fc3)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[6]]
+                                Click on check button[[ChromeDriver: chrome on WINDOWS (27d4075e6d188ba0a5cce3d050061fc3)] -> xpath: //a[contains(text(),'Checkout')]]
+                                Click to see screenshot
+                                <a target = "_blank" href=C:\Users\topig\IdeaProjects\com-tutorialninja-pagefactory-sw5/test-output/html/verifyThatUserPlaceOrderSuccessfullyTue_Dec_13_20_01_09_GMT_2022.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target = "_blank" href=C:\Users\topig\IdeaProjects\com-tutorialninja-pagefactory-sw5/test-output/html/verifyThatUserPlaceOrderSuccessfullyTue_Dec_13_20_01_09_GMT_2022.jpg><img src=C:\Users\topig\IdeaProjects\com-tutorialninja-pagefactory-sw5/test-output/html/verifyThatUserPlaceOrderSuccessfullyTue_Dec_13_20_01_09_GMT_2022.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest.verifyThatUserPlaceOrderSuccessfully(LaptopsAndNotebooksPageTest.java:54)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.testsuite.HomePageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully
+      </td>
+  <td class="duration">
+    0.742s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Mouse Hovering to LaptopsNotebooks and Clicking on it: [[ChromeDriver: chrome on WINDOWS (5c94b40fad9262cb459495132efa7c4e)] -> link text: Laptops & Notebooks]
+                                Navigating to laptops and notebooks error message: [[ChromeDriver: chrome on WINDOWS (5c94b40fad9262cb459495132efa7c4e)] -> xpath: //h2[contains(text(),'Laptops & Notebooks')]]
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.testsuite.MyAccountsPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToLoginPageSuccessfully
+      </td>
+  <td class="duration">
+    0.392s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on my account: [[ChromeDriver: chrome on WINDOWS (db1305a81dc1a27f5196e0c65edc810f)] -> xpath: //span[text()='My Account']]
+                                Verifying returning customer: [[ChromeDriver: chrome on WINDOWS (db1305a81dc1a27f5196e0c65edc810f)] -> xpath: //h2[contains(text(),'Returning Customer')]]
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>TestNG:  DeskTopPage Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DeskTopPage Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 13 16:55:18 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>19 seconds (19552 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.DesktopPageTest.verifyProductArrangeInAlphabeticalOrder()'><b>verifyProductArrangeInAlphabeticalOrder</b><br>Test class: com.tutorialsninja.testsuite.DesktopPageTest<br/>
+<a href="#Output-2325213" onClick='toggleBox("Output-2325213", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2325213" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2325213">
+Mouse Hovering to Desktop and Clicking on it: [[ChromeDriver: chrome on WINDOWS (d3851f0f467ab2366cb9c621cac355af)] -> link text: Desktops]<br/>
+Arrange products in descending order<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.testsuite.DesktopPageTest@42607a4f</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.DesktopPageTest.verifyProductAddedToShoppingCartSuccessFully()'><b>verifyProductAddedToShoppingCartSuccessFully</b><br>Test class: com.tutorialsninja.testsuite.DesktopPageTest<br/>
+<a href="#Output-1365711624" onClick='toggleBox("Output-1365711624", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1365711624" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1365711624">
+Clicking on currency dropdown<br/>
+Mouse Hovering to Desktop and Clicking on it: [[ChromeDriver: chrome on WINDOWS (d79ae2da3c6d5124740654488f92ad11)] -> link text: Desktops]<br/>
+Cliking on HP product<br/>
+Displaying error message<br/>
+Selecting date, month and year<br/>
+Enter quantity to quantity field [[ChromeDriver: chrome on WINDOWS (d79ae2da3c6d5124740654488f92ad11)] -> id: input-quantity]<br/>
+Clicking on add to cart button<br/>
+Displaying error message<br/>
+Clicking on shopping cart link<br/>
+Enter shoppingcart text error message [[ChromeDriver: chrome on WINDOWS (d79ae2da3c6d5124740654488f92ad11)] -> xpath: //div[@id='content']/h1[contains(text(), 'Shopping Cart')]]<br/>
+ Verify Product name error Message[[ChromeDriver: chrome on WINDOWS (d79ae2da3c6d5124740654488f92ad11)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[2]/a]<br/>
+Verify model error message[[ChromeDriver: chrome on WINDOWS (d79ae2da3c6d5124740654488f92ad11)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[3]]<br/>
+Verify price total error message[[ChromeDriver: chrome on WINDOWS (d79ae2da3c6d5124740654488f92ad11)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[6]]<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.tutorialsninja.testsuite.DesktopPageTest@42607a4f</td></tr>
+</table><p>
+</body>
+</html>

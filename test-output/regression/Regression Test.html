@@ -1,0 +1,393 @@
+<html>
+<head>
+<title>TestNG:  Regression Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 13 17:38:20 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>70 seconds (70593 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>regression </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.MyAccountsPageTest.verifyThatUserShouldLoginAndLogoutSuccessfully()'><b>verifyThatUserShouldLoginAndLogoutSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.MyAccountsPageTest<br/>
+<a href="#Output-469383315" onClick='toggleBox("Output-469383315", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-469383315" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-469383315">
+Clicking on my account: [[ChromeDriver: chrome on WINDOWS (1799dee791ef2016e543ce5f487ff10a)] -> xpath: //span[text()='My Account']]<br/>
+Enter email prime123@gmail.com to email field [[ChromeDriver: chrome on WINDOWS (1799dee791ef2016e543ce5f487ff10a)] -> id: input-email]<br/>
+Enter password test123 to email field [[ChromeDriver: chrome on WINDOWS (1799dee791ef2016e543ce5f487ff10a)] -> id: input-password]<br/>
+Click on login button[[ChromeDriver: chrome on WINDOWS (1799dee791ef2016e543ce5f487ff10a)] -> xpath: //form[contains(@action,'login')]//input[@type='submit']]<br/>
+Clicking on my account: [[ChromeDriver: chrome on WINDOWS (1799dee791ef2016e543ce5f487ff10a)] -> xpath: //span[text()='My Account']]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\topig\IdeaProjects\com-tutorialninja-pagefactory-sw5/test-output/html/verifyThatUserShouldLoginAndLogoutSuccessfullyTue_Dec_13_17_39_22_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target = "_blank" href=C:\Users\topig\IdeaProjects\com-tutorialninja-pagefactory-sw5/test-output/html/verifyThatUserShouldLoginAndLogoutSuccessfullyTue_Dec_13_17_39_22_GMT_2022.jpg><img src=C:\Users\topig\IdeaProjects\com-tutorialninja-pagefactory-sw5/test-output/html/verifyThatUserShouldLoginAndLogoutSuccessfullyTue_Dec_13_17_39_22_GMT_2022.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1799dee791ef2016e543ce5f487ff10a, clickElement {id=294452b9-281c-4e6e-902d-4e3106ab9304}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\topig\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53211/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1799dee791ef2016e543ce5f487ff10a)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 1799dee791ef2016e543ce5f487ff10a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at com.tutorialsninja.utility.Utility.clickOnElement(Utility.java:53)
+	at com.tutorialsninja.pages.HomePage.clickOnMyAccount(HomePage.java:83)
+	at com.tutorialsninja.testsuite.MyAccountsPageTest.verifyThatUserShouldLoginAndLogoutSuccessfully(MyAccountsPageTest.java:74)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace469383315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace469383315'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1799dee791ef2016e543ce5f487ff10a, clickElement {id=294452b9-281c-4e6e-902d-4e3106ab9304}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\topig\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53211/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1799dee791ef2016e543ce5f487ff10a)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 1799dee791ef2016e543ce5f487ff10a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at com.tutorialsninja.utility.Utility.clickOnElement(Utility.java:53)
+	at com.tutorialsninja.pages.HomePage.clickOnMyAccount(HomePage.java:83)
+	at com.tutorialsninja.testsuite.MyAccountsPageTest.verifyThatUserShouldLoginAndLogoutSuccessfully(MyAccountsPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>2</td>
+<td>com.tutorialsninja.testsuite.MyAccountsPageTest@6dde5c8c</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest.verifyThatUserPlaceOrderSuccessfully()'><b>verifyThatUserPlaceOrderSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest<br/>
+<a href="#Output-1327907419" onClick='toggleBox("Output-1327907419", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1327907419" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1327907419">
+Clicking on currency dropdown<br/>
+Mouse Hovering to LaptopsNotebooks and Clicking on it: [[ChromeDriver: chrome on WINDOWS (0136bda4f85616d55d5035a2011bf24e)] -> link text: Laptops & Notebooks]<br/>
+Clicking pn MacBook Menu<br/>
+Verify Macbook error Message [[ChromeDriver: chrome on WINDOWS (0136bda4f85616d55d5035a2011bf24e)] -> xpath: //h1[contains(text(),'MacBook')]]<br/>
+mac book add to cart[[ChromeDriver: chrome on WINDOWS (0136bda4f85616d55d5035a2011bf24e)] -> xpath: //button[@id='button-cart']]<br/>
+Click on shopping cart button[[ChromeDriver: chrome on WINDOWS (0136bda4f85616d55d5035a2011bf24e)] -> xpath: //a[contains(text(),'shopping cart')]]<br/>
+Enter shoppingcart text error message [[ChromeDriver: chrome on WINDOWS (0136bda4f85616d55d5035a2011bf24e)] -> xpath: //div[@id='content']/h1[contains(text(), 'Shopping Cart')]]<br/>
+Verify Macbook name error message[[ChromeDriver: chrome on WINDOWS (0136bda4f85616d55d5035a2011bf24e)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[2]/a]<br/>
+Verify macbook total error message[[ChromeDriver: chrome on WINDOWS (0136bda4f85616d55d5035a2011bf24e)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[6]]<br/>
+Click on check button[[ChromeDriver: chrome on WINDOWS (0136bda4f85616d55d5035a2011bf24e)] -> xpath: //a[contains(text(),'Checkout')]]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\topig\IdeaProjects\com-tutorialninja-pagefactory-sw5/test-output/html/verifyThatUserPlaceOrderSuccessfullyTue_Dec_13_17_39_09_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target = "_blank" href=C:\Users\topig\IdeaProjects\com-tutorialninja-pagefactory-sw5/test-output/html/verifyThatUserPlaceOrderSuccessfullyTue_Dec_13_17_39_09_GMT_2022.jpg><img src=C:\Users\topig\IdeaProjects\com-tutorialninja-pagefactory-sw5/test-output/html/verifyThatUserPlaceOrderSuccessfullyTue_Dec_13_17_39_09_GMT_2022.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest.verifyThatUserPlaceOrderSuccessfully(LaptopsAndNotebooksPageTest.java:54)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1327907419", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1327907419'><pre>java.lang.NullPointerException
+	at com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest.verifyThatUserPlaceOrderSuccessfully(LaptopsAndNotebooksPageTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>3</td>
+<td>com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest@6fb0d3ed</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.DesktopPageTest.verifyProductArrangeInAlphabeticalOrder()'><b>verifyProductArrangeInAlphabeticalOrder</b><br>Test class: com.tutorialsninja.testsuite.DesktopPageTest<br/>
+<a href="#Output-786669171" onClick='toggleBox("Output-786669171", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-786669171" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-786669171">
+Mouse Hovering to Desktop and Clicking on it: [[ChromeDriver: chrome on WINDOWS (2c643bdd427dead3b7a8dadd71d788ab)] -> link text: Desktops]<br/>
+Arrange products in descending order<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.testsuite.DesktopPageTest@4524411f</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.HomePageTest.verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully()'><b>verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.HomePageTest<br/>
+<a href="#Output-1019831085" onClick='toggleBox("Output-1019831085", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1019831085" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1019831085">
+Mouse Hovering to LaptopsNotebooks and Clicking on it: [[ChromeDriver: chrome on WINDOWS (4350d2987b35d395f06831a79384ec5b)] -> link text: Laptops & Notebooks]<br/>
+Navigating to laptops and notebooks error message: [[ChromeDriver: chrome on WINDOWS (4350d2987b35d395f06831a79384ec5b)] -> xpath: //h2[contains(text(),'Laptops & Notebooks')]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.testsuite.HomePageTest@fe18270</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.MyAccountsPageTest.verifyThatUserRegisterAccountSuccessfully()'><b>verifyThatUserRegisterAccountSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.MyAccountsPageTest<br/>
+<a href="#Output-488795943" onClick='toggleBox("Output-488795943", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-488795943" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-488795943">
+Clicking on my account: [[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> xpath: //span[text()='My Account']]<br/>
+Enter FirstName John to firstname field [[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> id: input-firstname]<br/>
+Enter lastname Wong to lastname field [[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> id: input-lastname]<br/>
+Enter Email jo@example.com to email field [[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> id: input-email]<br/>
+Enter telephone 235665656 to telephone field [[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> id: input-telephone]<br/>
+Enter password test123 to password field [[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> id: input-password]<br/>
+Enter Conformpassword test123 to confirm password field [[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> id: input-confirm]<br/>
+Click on Agree[[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> xpath: //div[@class = 'buttons']//input[@name='agree']]<br/>
+Click on continue[[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> xpath: //div[@class = 'buttons']//input[@value='Continue']]<br/>
+Verify your Account Message[[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> xpath: //h1[contains(text(),'Your Account Has Been Created!')]]<br/>
+Click on sucess continue button [[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> xpath: //a[contains(text(),'Continue')]]<br/>
+Click on my account link [[ChromeDriver: chrome on WINDOWS (440028f51391be1282a8b2cc82c55805)] -> xpath: //span[contains(text(),'My Account')]]<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.testsuite.MyAccountsPageTest@6dde5c8c</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.MyAccountsPageTest.verifyUserShouldNavigateToRegisterPageSuccessfully()'><b>verifyUserShouldNavigateToRegisterPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.MyAccountsPageTest<br/>
+<a href="#Output-854788294" onClick='toggleBox("Output-854788294", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-854788294" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-854788294">
+Clicking on my account: [[ChromeDriver: chrome on WINDOWS (76f3b575bc47e741499c95d483cc83cd)] -> xpath: //span[text()='My Account']]<br/>
+Verify Register Account Text [[ChromeDriver: chrome on WINDOWS (76f3b575bc47e741499c95d483cc83cd)] -> xpath: //h1[text()='Register Account']]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.testsuite.MyAccountsPageTest@6dde5c8c</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest.verifyProductsPriceDisplayHighToLowSuccessfully()'><b>verifyProductsPriceDisplayHighToLowSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest<br/>
+<a href="#Output-1838584624" onClick='toggleBox("Output-1838584624", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1838584624" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1838584624">
+Mouse Hovering to LaptopsNotebooks and Clicking on it: [[ChromeDriver: chrome on WINDOWS (1457af15ba1bdbfd69a3b12ad9ab55e0)] -> link text: Laptops & Notebooks]<br/>
+Arranging product in high to low order: <br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.HomePageTest.verifyUserShouldNavigateToComponentsPageSuccessfully()'><b>verifyUserShouldNavigateToComponentsPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.HomePageTest<br/>
+<a href="#Output-1680139795" onClick='toggleBox("Output-1680139795", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1680139795" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1680139795">
+Mouse Hovering to Components and Clicking on it: [[ChromeDriver: chrome on WINDOWS (6f2c63983e127d12e315ff3918100518)] -> link text: Components]<br/>
+verify navigate to components error message[[ChromeDriver: chrome on WINDOWS (6f2c63983e127d12e315ff3918100518)] -> xpath: //h2[contains(text(),'Components')]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.testsuite.HomePageTest@fe18270</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.DesktopPageTest.verifyProductAddedToShoppingCartSuccessFully()'><b>verifyProductAddedToShoppingCartSuccessFully</b><br>Test class: com.tutorialsninja.testsuite.DesktopPageTest<br/>
+<a href="#Output-571956559" onClick='toggleBox("Output-571956559", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-571956559" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-571956559">
+Clicking on currency dropdown<br/>
+Mouse Hovering to Desktop and Clicking on it: [[ChromeDriver: chrome on WINDOWS (13c3bae32f073b56d5df8903b81c217a)] -> link text: Desktops]<br/>
+Cliking on HP product<br/>
+Displaying error message<br/>
+Selecting date, month and year<br/>
+Enter quantity to quantity field [[ChromeDriver: chrome on WINDOWS (13c3bae32f073b56d5df8903b81c217a)] -> id: input-quantity]<br/>
+Clicking on add to cart button<br/>
+Displaying error message<br/>
+Clicking on shopping cart link<br/>
+Enter shoppingcart text error message [[ChromeDriver: chrome on WINDOWS (13c3bae32f073b56d5df8903b81c217a)] -> xpath: //div[@id='content']/h1[contains(text(), 'Shopping Cart')]]<br/>
+ Verify Product name error Message[[ChromeDriver: chrome on WINDOWS (13c3bae32f073b56d5df8903b81c217a)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[2]/a]<br/>
+Verify model error message[[ChromeDriver: chrome on WINDOWS (13c3bae32f073b56d5df8903b81c217a)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[3]]<br/>
+Verify price total error message[[ChromeDriver: chrome on WINDOWS (13c3bae32f073b56d5df8903b81c217a)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[6]]<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.tutorialsninja.testsuite.DesktopPageTest@4524411f</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.HomePageTest.verifyUserShouldNavigateToDesktopsPageSuccessfully()'><b>verifyUserShouldNavigateToDesktopsPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.HomePageTest<br/>
+<a href="#Output-1392027380" onClick='toggleBox("Output-1392027380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1392027380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1392027380">
+Mouse Hovering to Desktop and Clicking on it: [[ChromeDriver: chrome on WINDOWS (fabc2bad83451fcab1302999d15bcb2f)] -> link text: Desktops]<br/>
+Navigate to desktop error message<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.testsuite.HomePageTest@fe18270</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.MyAccountsPageTest.verifyUserShouldNavigateToLoginPageSuccessfully()'><b>verifyUserShouldNavigateToLoginPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.MyAccountsPageTest<br/>
+<a href="#Output-465257140" onClick='toggleBox("Output-465257140", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-465257140" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-465257140">
+Clicking on my account: [[ChromeDriver: chrome on WINDOWS (a28f6fe539abe7a11737433acb256486)] -> xpath: //span[text()='My Account']]<br/>
+Verifying returning customer: [[ChromeDriver: chrome on WINDOWS (a28f6fe539abe7a11737433acb256486)] -> xpath: //h2[contains(text(),'Returning Customer')]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.testsuite.MyAccountsPageTest@6dde5c8c</td></tr>
+</table><p>
+</body>
+</html>
